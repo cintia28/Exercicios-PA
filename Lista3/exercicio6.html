@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script language = javascript>
+            timea=prompt("Qual o time? ")
+            golstimea=parseInt(prompt("Quantos gols o time fez? "))
+
+            timeb=prompt("Qual o time? ")
+            golstimeb=parseInt(prompt("Quantos gols o time fez? "))
+        
+        if (golstimea>golstimeb)
+        {
+            vencedor=timea
+        }
+
+        if (golstimeb>golstimea)
+        {
+            vencedor=timeb
+        }
+
+        if (golstimea==golstimeb)    
+        {
+            vencedor="EMPATE"
+        }
+
+        alert("O vencedor é: " + vencedor)
+        </script>
+
+    <body></body>
+    </head>
+</html>

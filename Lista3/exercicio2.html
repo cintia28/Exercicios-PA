@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script language = javascript>
+            salariofixo=parseFloat(prompt("Qual o salario fixo?"))
+            valordevendas=parseFloat(prompt("Valor total em vendas:"))
+        
+        
+            if (valordevendas<=1500)
+            {
+                valorcomissao=(valordevendas*0.03)
+
+                valorareceber=(salariofixo+valorcomissao)
+                
+            }
+            else if (valordevendas>=1500)
+           {
+                valorcomissao1=(1500*0.03)
+                valorcomissao2=(valordevendas-1500)*0.05
+
+                valorareceber=(salariofixo+valorcomissao1+valorcomissao2)
+           }
+           
+            alert("O valor a ser pago é de: " + valorareceber.toFixed(2))
+        </script>
+
+    <body></body>
+    </head>
+</html>
